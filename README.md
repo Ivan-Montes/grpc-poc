@@ -3,7 +3,7 @@
 
 Playing with [Spring](https://spring.io/) and [gRPC](https://grpc.io/) using [gRPC-Spring-Starter](https://grpc-ecosystem.github.io/grpc-spring/en/)
 
-### Components **Components IN CONSTRUCCTION**
+### Components :rotating_light::no_entry:** IN CONSTRUCCTION**
 
 | Name | gRPC Port | Web Port |
 |------|-----------|-------------|
