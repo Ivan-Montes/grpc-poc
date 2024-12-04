@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package net.protobufs;
+
+option java_multiple_files = true;
+option java_package = "dev.protobufs";
+
+service GrpcService {
+    rpc helloWorld (HelloRequest) returns (HelloResponse);
+    rpc goodbyeWorld (GoodbyeRequest) returns (GoodbyeResponse);    
+}
+
+service GrpcDynamicService {
+    rpc sayHi (HelloRequest) returns (HelloResponse);
+}
+
+service GrpcReactiveService {
+    rpc areYouSure (HelloRequest) returns (HelloResponse);
+}
+
+message HelloRequest {
+    string name = 1;
+}
+
+message HelloResponse {
+    string message = 1;
+}
+
+message GoodbyeRequest {
+    string name = 1;
+}
+
+message GoodbyeResponse {
+    string message = 1;
+}
