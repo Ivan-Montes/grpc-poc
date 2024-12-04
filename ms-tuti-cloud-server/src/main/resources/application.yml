@@ -1,0 +1,22 @@
+
+spring:
+  application:
+    name: ms-tuti-cloud-server
+#  main:
+#    web-application-type: servlet
+    
+server:
+  port: ${SERVER_PORT_CLOUD:0}
+  
+grpc:
+  server:
+    port: 0
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${random.uuid}
+    preferIpAddress: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ 
+
