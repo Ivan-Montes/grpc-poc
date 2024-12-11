@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: ms-tuti-server
+ 
+grpc:
+  server:
+    port: 50051
+    
