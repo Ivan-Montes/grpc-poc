@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: ms-tuti-server-reactive
+    
+server:
+  port: ${SERVER_PORT_REACTIVE:0}
+   
+grpc:
+  server:
+    port: 50055
+    
