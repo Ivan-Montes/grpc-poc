@@ -1,0 +1,28 @@
+
+spring:
+  application:
+    name: ms-tuti-server-and-client
+  
+server:
+  port: ${SERVER_PORT_SERVER_AND_CLIENT:8083}
+    
+grpc:
+  server:
+    port: 50053
+  client:
+    ms-tuti-server:
+      address: 'static://127.0.0.1:50051'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+    ms-tuti-server-and-client:
+      address: 'static://127.0.0.1:50053'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+    ms-tuti-server-reactive:
+      address: 'static://127.0.0.1:50055'
+      enableKeepAlive: true
+      keepAliveWithoutCalls: true
+      negotiationType: plaintext
+      
